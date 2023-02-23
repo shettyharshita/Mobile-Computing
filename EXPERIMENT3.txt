@@ -1,0 +1,12 @@
+import random
+k=random.getrandbits(128)
+m=random.getrandbits(128)
+kb=bin(k)[2:]
+mb=bin(m)[2:]
+kbl=kb[0:64]
+kbr=kb[64:]
+mbl=mb[0:64]
+mbr=mb[64:]
+a1=int(kbl,2)^int(mbr,2)
+a2=int(kbr,2)^int(mbl,2)
+
